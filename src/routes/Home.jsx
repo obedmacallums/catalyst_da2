@@ -4,7 +4,7 @@ import {ws_connect} from "../hooks/connect"
 const Home = ()=>{
 
 
-const{data, error} = ws_connect('wss://127.0.0.1:9636')
+const{data, error} = ws_connect('ws://127.0.0.1:9635')
 
 return (
 
@@ -17,7 +17,7 @@ return (
 <Button text='conectar'/>
 <Button text='desconectar'/>
 
-<input type="text" value={data}></input>
+<div type="text"></div>
 
 
 </>);
